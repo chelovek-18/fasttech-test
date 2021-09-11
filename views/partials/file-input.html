@@ -1,0 +1,13 @@
+{{getTypes schema types}}
+<div class="file-input" data-tmpl="file-input" data-type="{{schema/type}}">
+    {{#if (getFiles files schema/type)}}
+    <script>
+        // Вывод контента при загрузке страницы (при его наличии):
+        window.fileList = window.fileList || {};
+        window.fileList[ '{{schema/type}}' ] = '{{{getFiles files schema/type}}}';
+    </script>
+    {{/if}}
+    <ul class="files-ul" data-tmpl="files-ul" data-type="{{schema/type}}"></ul>
+    <input type="file" id="{{schema/type}}-file" name="{{schema/type}}" />
+    <label class="button" for="{{schema/type}}-file"><i class="fa fa-upload fa-3x"></i></label>
+</div>

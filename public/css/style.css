@@ -1,0 +1,143 @@
+/* MAIN */
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.main-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HTML */
+
+input {
+    font-size: 16px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    color: #000;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 4px #777 double;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, header h3 {
+    margin: 2px 7px;
+}
+
+.header-info {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 7px;
+}
+
+/* BODY */
+
+.fa-warning {
+    color: red;
+}
+
+form, form .li-file-name {
+    display: flex;
+    flex-direction: column;
+}
+
+form .descr-parag, form .li-file {
+    display: flex;
+    flex-direction: row;
+}
+
+form .descr-parag .fa-5x {
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+form label {
+    cursor: pointer;
+    color: green;
+    width: 60px;
+    height: 60px;
+    border: 3px green solid;
+    line-height: 77px;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    background: rgba( 0,125,0,0.4 );
+}
+
+.files-ul {
+    list-style: none;
+}
+
+[type=file] {
+    display: none;
+}
+
+.no-files-pas {
+    display: none;
+}
+
+.li-file-name {
+    width: 300px;
+    height: 30px;
+}
+
+.preload-line {
+    width: 100%;
+    height: 4px;
+}
+
+.preload-val {
+    width: 0%;
+    height: 100%;
+    background: green;
+    transition: 0.5s;
+}
+
+.fa-close {
+    color: red;
+    cursor: pointer;
+}
+
+.file-link {
+    overflow: hidden;
+    max-height: 28px;
+    line-height: 28px;
+}

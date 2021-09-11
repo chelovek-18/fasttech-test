@@ -1,0 +1,123 @@
+<form id="file-form" method="post" encType="multipart/form-data">
+    <br />
+    <div class="descr-parag">
+        <span class="fa-5x">1.</span>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div><br />Поле для загрузки одного файла.<br />Выберите файл<br />или перетащите его в указанное поле:</div>
+    </div>
+    {{> partials/file-input}}
+    <br />
+    <div class="descr-parag">
+        <span class="fa-5x">2.</span>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div><br />Поле для загрузки нескольких файлов.<br />Выберите файлы<br />или перетащите их в указанное поле:</div>
+    </div>
+    {{> partials/file-input}}
+</form>
+
+<!--<form id="file-form" method="post" action="/save/single" encType="multipart/form-data">
+    <br /><input type="text" name="sergo">
+    <div class="descr-parag">
+        <span class="fa-5x">1.</span>
+        <span>&nbsp;&nbsp;&nbsp;</span>
+        <div><br />Поле для загрузки одного файла.<br />Выберите файл<br />или перетащите его в указанное поле:</div>
+    </div>
+    <input type="file" name="xxx" />
+    <div class="file-input" data-tmpl="file-input" data-type="single">
+        {{#if single}}
+        <script>
+            window.inited = window.inited || [];
+            window.inited.push( function() {
+                $( '.files-ul[data-type=single]' ).list = JSON.parse( '{{{single}}}' );
+            });
+        </script>
+        {{/if}}
+        <ul class="files-ul" data-tmpl="files-ul" data-type="single"></ul>
+    </div>
+
+    <br />
+    <div>2. </div>
+</form>
+
+<template id="file-input">
+    <input type="file" />
+    <label class="button"><i class="fa fa-upload fa-3x"></i></label>
+</template>
+
+<template id="files-ul">
+    <li class="no-files">Файлы отсутствуют</li>
+</template>-->
+
+
+<!--
+    <input type="text" name="xx" />
+    <show-hello name="John"></show-hello>
+
+    <script>
+    function handleFiles( files ) {
+        console.log( 'files', files[ 0 ].name );
+    }
+</script>
+<script>
+        customElements.define('show-hello', class extends HTMLElement {
+          connectedCallback() {
+            const shadow = this.attachShadow({mode: 'open'});
+            shadow.innerHTML = `<p>
+                    <input type="text" name="yy" />
+              Hello, ${this.getAttribute('name')}
+            </p>`;
+          }
+        });
+        </script>
+        
+<h2>О-ла-ла</h2>
+<div id="drop-area">
+        <form class="my-form">
+          <p>Загрузите изображения с помощью диалога выбора файлов или перетащив нужные изображения в выделенную область</p>
+          <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label class="button" for="fileElem">Выбрать изображения</label>
+        </form>
+      </div>
+      <style>
+      
+      #drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  font-family: sans-serif;
+  margin: 100px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+p {
+  margin-top: 0;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}
+      </style>-->
